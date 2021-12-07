@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+        
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            color: grey;
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>High School's location is at Sharda Vihar, Amravati. It is a State Board school, with a team of 17 dedicated and professional faculties, which are here to ensure that the children get the most from their education. 1983 saw Narayandas Laddha High
+            School being launched. The primary medium of instruction is Marathi with Others as secondary medium and the student teacher ratio is 43:1. The school tries to provide best learning environment. This school runs classes from 6 to 10 to provide
+            education to students. The current student strength of the school is approximately 737. The library in this school has 3124 books. The school has given exceptional results in the academic sphere and its students have excelled in extra co-curricular
+            activities too. This school has 100% of students qualifying the examination and out of these 44% scored first grade.</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="https://img.bridgelabz.com/Narayan.webp" alt="Jane" style="width:100%">
+                <div class="container">
+                    <h2>Narayan Mahadevan</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>25 Yrs. In Technology Leadership In India & US Founder of 3 Startups</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://img.bridgelabz.com/Punit.webp" alt="Mike" style="width:100%">
+                <div class="container">
+                    <h2>Puneet Dhawan
+                    </h2>
+                    <p class="title">CGO</p>
+                    <p>20+ Yrs. In Heading India & Global Sales</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="https://img.bridgelabz.com/Manoj.webp" alt="John" style="width:100%">
+                <div class="container">
+                    <h2>Manoj Barot</h2>
+                    <p class="title">Designer</p>
+                    <p>18+Yrs. In Heading Operations With TATA and Other Corporates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

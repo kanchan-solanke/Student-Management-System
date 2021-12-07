@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Style inputs */
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        /* Style the container/contact section */
+        
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        /* Create two columns that float next to eachother */
+        
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="data:image/jpeg;base64,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"
+                    style="width:100%">
+            </div>
+            <div class="column">
+                <form id="myForm">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="num">Mobile No</label><br>
+                    <input type="text" id="num" name="num" placeholder="Your Mobile Number.."><br>
+                    <label for="email">Email Address</label><br>
+                    <input type="text" id="email" name="email" placeholder="Your Email Address.."><br><br>
+
+                    <label for="subject">Any Queries</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var form = document.getElementById("myForm")
+        $(document).ready(function() {
+            console.log("ready!");
+            $("#submit").click(function(e) {
+                e.preventDefault();
+                var fname = document.getElementById("fname").value
+                var lname = document.getElementById("lname").value
+                var num = document.getElementById("num").value
+                var email = document.getElementById("email").value
+                var subject = document.getElementById("subject").value
+
+
+                console.log("Data Present")
+
+                fetch("http://localhost:3000/ContactUs", {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        fname: fname,
+                        lname: lname,
+                        num: num,
+                        email: email,
+                        subject: subject
+                    }),
+
+                    headers: {
+                        "content-Type": "application/json; charset=UTF-8"
+                    }
+                }).then(function(response) {
+                    return response.json()
+                }).then(function(data) {
+                    console.log(data);
+                })
+
+            })
+            console.log("ready!");
+        });
+    </script>
+
+</body>
+
+</html>

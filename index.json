@@ -1,0 +1,57 @@
+{
+  "LoginDetails": [
+    {
+      "id": 1,
+      "username": "kanchan",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "username": "abc",
+      "password": "12345678"
+    },
+    {
+      "id": "3",
+      "username": "manisha",
+      "password": "123456"
+    }
+  ],
+  "StudentData": [
+    {
+      "fname": "Kanchan",
+      "gender": "female",
+      "roll": "7899",
+      "id": 2
+    },
+    {
+      "fname": "Manisha",
+      "gender": "female",
+      "roll": "21",
+      "id": 3
+    },
+    {
+      "fname": "Abhijit",
+      "gender": "male",
+      "roll": "34",
+      "id": 4
+    },
+    {
+      "fname": "Jiya",
+      "gender": "female",
+      "roll": "675",
+      "id": 5
+    },
+    {
+      "fname": "Anita",
+      "gender": "female",
+      "roll": "789990",
+      "id": 6
+    },
+    {
+      "fname": "Sanjay",
+      "gender": "male",
+      "roll": "7897",
+      "id": 8
+    }
+  ]
+}
